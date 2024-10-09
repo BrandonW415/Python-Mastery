@@ -36,3 +36,22 @@ print("Year the third book was published:", books[2]["year"])
 print("\nAll books:")
 for book in books:
     print(f"Title: {book['title']}, Author: {book['author']}")
+    
+    
+courses = {
+    "math": ["Alice", "Bob", "Charlie", "Brandon"],
+    "history": ["Eva", "Franklin", "Grace", "Henry", "Ivy"],
+    "chemistry": ["Jack", "Katie", "Liam", "Mya", "Noah"]
+}
+
+courses["math"].extend(["Oliver", "Penny", "Quinn", "Rochelle", "Samantha"])
+
+del courses["history"][2]
+
+print("Students in chemistry:", courses["chemistry"])
+
+courses["physics"] = ["Lamar", "Tiana", "Tyrell", "Xavier"]
+
+print("\nFinal state of courses:")
+for course, students in courses.items():
+    print(f"{course}: {students}")
