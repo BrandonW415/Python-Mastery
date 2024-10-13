@@ -1,0 +1,12 @@
+2024-10-13 13:40:01,710 - INFO - Start CSV Shuffler
+2024-10-13 13:40:01,714 - INFO - Backup created: backups\backip_20241013_sales_data.csv
+2024-10-13 13:40:01,714 - INFO - CSV file shuffled and written: ./sales_data.csv
+2024-10-13 13:40:11,722 - INFO - CSV file shuffled and written: ./sales_data.csv
+2024-10-13 13:40:21,728 - INFO - CSV file shuffled and written: ./sales_data.csv
+2024-10-13 13:40:31,734 - INFO - CSV file shuffled and written: ./sales_data.csv
+2024-10-13 13:40:41,742 - INFO - CSV file shuffled and written: ./sales_data.csv
+2024-10-13 13:40:51,748 - INFO - CSV file shuffled and written: ./sales_data.csv
+2024-10-13 13:41:01,756 - INFO - CSV file shuffled and written: ./sales_data.csv
+2024-10-13 13:41:11,763 - INFO - CSV file shuffled and written: ./sales_data.csv
+2024-10-13 13:41:21,770 - INFO - CSV file shuffled and written: ./sales_data.csv
+2024-10-13 13:41:31,776 - INFO - CSV file shuffled and written: ./sales_data.csv
