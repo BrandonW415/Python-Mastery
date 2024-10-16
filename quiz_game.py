@@ -15,3 +15,29 @@ questions = [
         "correct_answer": "Ray Allen"
     }
 ]
+
+def run_quiz():
+    score = 0
+    correct_answers = []
+    incorrect_answers = []
+    
+    for i, question in enumerate(questions, 1):
+        print(f"\nQuestion {i}: {question['question']}")
+        for j, option in enumerate(question['options'], 1):
+            print(f"{j}.{option}")
+
+        while True:
+            user_answer = input("Select the number for your answer: ")
+            if user_answer.isdigit() and 1 <= int(user_answer) <=len(question['options']):
+                user_answer = question['options'][int(user_answer) - 1]
+                break
+            else:
+                print("Invalid response. Please enter a number corresponding to the options of the question.")
+        
+        if user_answer == question['correct_answer']:
+            score += 1
+            correct_answers.append(question['question'])
+        else:
+            incorrect_answers.append((question['question'], user_answer, question['correct_answer']))
+            
+    print("\n---Trivia Complete---")
