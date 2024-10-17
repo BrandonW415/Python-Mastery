@@ -7,7 +7,7 @@ questions = [
     {
         "question": "On the periodic table, what does the element S represent?",
         "options": ["Sulfur", "Samarium", "Selenium", "Scandium"],
-        "correct_answer": "Mars"
+        "correct_answer": "Sulfur"
     },
     {
         "question": "Other than Steph Curry, who has made the most 3-pointers of all time in the NBA?",
@@ -41,3 +41,17 @@ def run_quiz():
             incorrect_answers.append((question['question'], user_answer, question['correct_answer']))
             
     print("\n---Trivia Complete---")
+    print(f"Your score: {score}/{len(questions)}")
+    
+    print("\nHere are the questions that you have answered correctly: ")
+    for question in correct_answers:
+        print(f"- {question}")
+        
+    print("\nHere are the questions that you have answered incorrectly: ")
+    for question, user_answer, correct_answer in incorrect_answers:
+        print(f"- {question}")
+        print(f" Your answer: {user_answer}")
+        print(f" Correct answer: {correct_answer}")
+        
+if __name__ == "__main__":
+    run_quiz()
